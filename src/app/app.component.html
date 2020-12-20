@@ -1,18 +1,49 @@
 <!-- NavBar -->
-<nav class="navbar-dark bg-dark headerNav">
+
+<header>
+
+    <a href="" class="logoside">
+      <img src="./assets/img/logo.svg" alt="" class="logoImage">
+      <p class="blogName">24/7 NEWS</p>
+    </a>
+
+  <div class="coloredNav">
+    <nav class="navContent">
+      <button aria-expanded="false" aria-controls="menu-list" class="toggle">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+      </button>
+      <ul class="headerNav">
+        <li class="navComp"  routerLink="/''">Home</li>
+        <li class="navComp" routerLink="/News">News</li>
+        <li class="navComp" routerLink="/Politics">Politics</li>
+        <li class="navComp" routerLink="/Business">Business</li>
+        <li class="navComp" routerLink="/Sports">Sports</li>
+        <li class="navComp" routerLink="/Entertainment">Entertainment</li>
+        <li class="navComp" routerLink="/Health">Health</li>
+        <li class="navComp border">Account</li>
+        <li class="navComp border">Sign Up</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- <nav class="navbar-dark bg-dark headerNav">
     <a routerLink="/''"class="logoSide">
       <img src="./assets/img/logo.svg" alt="" class="logoImage">
       <p class="blogName">24/7 NEWS</p>
     </a> 
   </nav>
   
+   
       <nav class="navbar-expand-lg color">
-        <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+        <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navTextLink">
             <li class="nav-item navText">
               <a class="nav-link active navComp" aria-current="page"  routerLink="/''">Home</a>
             </li>
@@ -50,7 +81,10 @@
           </ul>
         </div>
       </div>
-      </nav>
+      </nav> -->
+    
+
+
 
 <router-outlet></router-outlet>
 
@@ -64,21 +98,21 @@
     </div>
     <div class="footerNav">
       <div class="footerNavLinks">
-        <p><a routerLink="/''">Home</a></p>
-        <p><a routerLink="/News">News</a></p>
-        <p><a routerLink="/Politics">Politics</a></p>
-        <p><a routerLink="/Business">Business</a></p>
-        <p><a routerLink="/Sports">Sports</a></p>
+        <p routerLink="/''">Home</p>
+        <p routerLink="/News">News</p>
+        <p routerLink="/Politics">Politics</p>
+        <p routerLink="/Business">Business</p>
+        <p routerLink="/Sports">Sports</p>
       </div>
       <div class="footerNavLink">
-        <p><a routerLink="/Entertainment">Entertainment</a></p>
-        <p><a routerLink="/Health">Health</a></p>
+        <p routerLink="/Entertainment">Entertainment</p>
+        <p routerLink="/Health">Health</p>
       </div>
       <div class="footerIcon">
-        <img src="./assets/img/icons/youtube.svg" alt="youtubeIcon">
-        <img src="./assets/img/icons/facebook.svg" alt="facebookIcon">
-        <img src="./assets/img/icons/twitter.svg" alt="twitterIcon">
-        <img src="./assets/img/icons/instagram.svg" alt="instagramIcon">
+        <img src="./assets/img/icons/youtube.svg" alt="youtubeIcon" class="socialIcon">
+        <img src="./assets/img/icons/facebook.svg" alt="facebookIcon" class="socialIcon">
+        <img src="./assets/img/icons/twitter.svg" alt="twitterIcon" class="socialIcon">
+        <img src="./assets/img/icons/instagram.svg" alt="instagramIcon" class="socialIcon">
       </div>
       
         <form action="" class="footerForm">

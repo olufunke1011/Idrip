@@ -1,65 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-/* header */
-.headerNav {
-    height: 5.7rem;
+
+.logoside {
     display: flex;
-    justify-content: center;
-    /* position: sticky; */
-}
-
-.color {
-    background-color: #FAA4A5;  
-}
-
-.navText{
-  /* position: relative;
-  left: 9rem; */
-  padding: 0 1rem;
-}
-
-.logoSide {
-    /* position: sticky; */
-    display: flex;
+    background-color: #111111;
+    align-content: center;
     justify-content: center;
 }
 
 .blogName {
-    font-size: 3rem;
-    color: white;
-    font-family: 'Roboto';
+    color: #FFFFFF;
     font-weight: 700;
-    margin: .3rem 0 0 0;
+    font-size: 3rem;
+    margin: .2rem 0 0 .2rem;
+}
+
+.coloredNav {
+    background-color: #FAA4A5;
+    color: #FFFFFF;
+}
+
+.navContent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headerNav {
+    list-style-type: none;
+    display: flex;
+    font-size: .9rem;
+    font-weight: 700;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.toggle {
+    display: none;
 }
 
 .navComp {
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
+    padding: 0 1rem 0 1rem;
 }
 
-.navBtn {
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 0;
-    margin: .5rem 1rem 0 .5rem;
- } 
-
- .navBtn2 {
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 0;
-    margin-top: .5rem;
- } 
-
- @media only screen and (max-width: 1200px) {
-     /* .headerNav {
-         margin-bottom: 5rem;
-     } */
- }
+.border {
+    border: 1px solid #FFFFFF;
+    border-radius: .6rem;
+    margin-right: .5rem;
+}
 
 
- /* footer */
+
+
+
+/* footer */
 
  .footerPath {
     background-color: #111111;
@@ -92,25 +87,25 @@
     margin-left: 2rem;
 }
 
-a {
+p {
     color: #ffffff;
     font-size: 13px;
     font-weight: bold;
 }
 
 .footerIcon {
-    margin-left: 17rem;
+    margin-left: 15.5rem;
 }
 
-img {
-    margin-right: 1rem;
+.socialIcon {
+    margin-left: 1rem; 
 }
 
 .footerForm {
     border: 1px solid #ffffff;
     padding: 2.5rem 2rem;
     color: #ffffff;
-    margin-left: 18rem;
+    margin-left: 19rem;
 }
 
 h6 {
@@ -126,6 +121,19 @@ input {
     background-color: #111111;
     font-size: 14px;
     color: #ffffff;
+}
+
+.logoSide {
+    display: flex;
+    justify-content: center;
+}
+
+.blogName {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin: .2rem 0 0 .2rem;
 }
 
 .footerBtn {
@@ -145,19 +153,6 @@ input {
     margin: 0 .5rem 1rem 4.5rem;
 }
 
-.logoSide {
-    display: flex;
-    justify-content: center;
-}
-
-.blogName {
-    font-size: 3rem;
-    color: white;
-    font-family: 'Roboto';
-    font-weight: 700;
-    margin: .2rem 0 0 .2rem;
-}
-
 .footerLine {
     border-bottom: 5px solid #ffffff;
 
@@ -169,16 +164,20 @@ input {
     color: #ffffff;
     font-size: .9rem;
     font-weight: 400;
-}
+} 
 
-@media only screen and (max-width: 1200px) {
-
+ /* @media only screen and (min-width: 1200px) {
+    .navTextLink {
+        margin-left: 4.5rem;
+    }
+    .navTextLink {
+        margin-left: 4.5rem;
+    }
     .footerIcon {
-        margin-left: 13.5rem;
-        
+        margin-left: 13.5rem; 
     }
 
     .footerForm {
         margin-left: 15rem;
     }
-}
+} */
