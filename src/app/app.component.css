@@ -1,5 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+header {
+    cursor: pointer;
+}
 
 .logoside {
     display: flex;
@@ -58,6 +61,7 @@
 
  .footerPath {
     background-color: #111111;
+    cursor: pointer;
 }
 
 .footerHeads {
