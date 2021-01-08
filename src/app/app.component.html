@@ -7,7 +7,7 @@
     <p class="blogName">24/7 NEWS</p>
   </a>
   
-  <nav class="navbar navbar-expand-lg coloredNav mb-3">
+  <nav class="navbar navbar-expand-lg coloredNav">
 
       <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
       <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
@@ -15,26 +15,26 @@
       </button>
 
       <!-- Step 2: Add the ngbCollapse directive to the element below. -->
-      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-center">
         <ul class="navbar-nav headerNav">
           <li class="nav-item">
             <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Home</a>
           </li>
           <li class="nav-item active"> 
             <!-- Step 4: Close the menu when a link is clicked. -->
-            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">News</a>
+            <a class="nav-link navComp" [routerLink]="'/News'" (click)="isMenuCollapsed = true">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Politics</a>
+            <a class="nav-link navComp" [routerLink]="'/Politics'" (click)="isMenuCollapsed = true">Politics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Sports</a>
+            <a class="nav-link navComp" [routerLink]="'/Sports'" (click)="isMenuCollapsed = true">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Entertainment</a>
+            <a class="nav-link navComp" [routerLink]="'/Entertainment'" (click)="isMenuCollapsed = true">Entertainment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Health</a>
+            <a class="nav-link navComp" [routerLink]="'/Health'" (click)="isMenuCollapsed = true">Health</a>
           </li>
           <li ngbDropdown class="nav-item d-inline-block">
             <a class="nav-link border navComp"  id="dropdownBasic1" [routerLink]="'.'" (click)="isMenuCollapsed = true" ngbDropdownToggle>Account</a>

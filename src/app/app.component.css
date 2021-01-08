@@ -23,11 +23,11 @@ header {
     color: #FFFFFF;
 }
 
-.navContent {
+/* .navContent {
     display: flex;
     align-content: center;
     justify-content: center;
-}
+} */
 
 .headerNav {
     font-size: .9rem;
@@ -37,7 +37,9 @@ header {
 
 
 .navComp {
+    margin: 0 .5rem;
     padding: 0 1rem 0 1rem;
+    color: #ffffff;
 }
 
 .border {
