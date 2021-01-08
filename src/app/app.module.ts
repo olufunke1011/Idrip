@@ -12,7 +12,7 @@ import { EntertainmentComponent } from './entertainment/entertainment.component'
 import { SportsComponent } from './sports/sports.component';
 import { BusinessComponent } from './business/business.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
