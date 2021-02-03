@@ -1,84 +1,86 @@
 <!-- NavBar -->
-<nav class="navbar-dark bg-dark headerNav">
-    <a href="#" class="logoSide">
-      <img src="./assets/img/logo.svg" alt="" class="logoImage">
-      <p class="blogName">24/7 NEWS</p>
-    </a> 
-  </nav>
-  
-      <nav class="navbar navbar-expand-lg color">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item navText">
-              <a class="nav-link active navComp" aria-current="page"  routerLink="/''">Home</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp"  routerLink="/News">News</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp"  routerLink="/Politics">Politics</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp" routerLink="/Business">Business</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp"  routerLink="/Sports">Sports</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp"  routerLink="/Entertainment">Entertainment</a>
-            </li>
-            <li class="nav-item navText">
-              <a class="nav-link active navComp"  routerLink="/Health">Health</a>
-            </li>
-  
-  
-            <!-- <li class="nav-item navText dropdown">
-              <a class="nav-link active navComp dropdown-toggle navBtn" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Account</a>
-                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" type="button"
-                    href="#">SignIn</a></li>
-                  <li><a class="dropdown-item" type="button" href="#">SignIn</a></li>
-                </ul>
-            </li> -->
-            <li>
-            <a href = "#" class="nav-link active navComp navBtn2 navText">SignUp</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </nav>
 
-<router-outlet></router-outlet>
+<header>
+  <a href="" class="logoside">
+    <img src="./assets/img/logo.svg" alt="" class="logoImage">
+    <p class="blogName">24/7 NEWS</p>
+  </a>
+  
+  <nav class="navbar navbar-expand-lg coloredNav">
+
+      <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+      </button>
+
+      <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav headerNav">
+          <li class="nav-item">
+            <a class="nav-link navComp" [routerLink]="'.'" (click)="isMenuCollapsed = true">Home</a>
+          </li>
+          <li class="nav-item active"> 
+            <!-- Step 4: Close the menu when a link is clicked. -->
+            <a class="nav-link navComp" [routerLink]="'/News'" (click)="isMenuCollapsed = true">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navComp" [routerLink]="'/Politics'" (click)="isMenuCollapsed = true">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navComp" [routerLink]="'/Sports'" (click)="isMenuCollapsed = true">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navComp" [routerLink]="'/Entertainment'" (click)="isMenuCollapsed = true">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navComp" [routerLink]="'/Health'" (click)="isMenuCollapsed = true">Health</a>
+          </li>
+          <li ngbDropdown class="nav-item d-inline-block">
+            <a class="nav-link border navComp"  id="dropdownBasic1" [routerLink]="'.'" (click)="isMenuCollapsed = true" ngbDropdownToggle>Account</a>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem [routerLink]="'/Login'">Login</button>
+                <button ngbDropdownItem [routerLink]="'/News'">Logout</button>
+              </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link border navComp " [routerLink]="'.'" (click)="isMenuCollapsed = true">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</header>
+
+
+
+    <router-outlet></router-outlet>
 
       <!-- footer -->
 
-<footer class="footerPath">
+  <footer class="footerPath">
+
     <div class="footerHeads">
       <p>About Us</p>
       <p>Social Media</p>
       <p>Reach Us</p>
     </div>
+
     <div class="footerNav">
       <div class="footerNavLinks">
-        <p><a href="home">Home</a></p>
-        <p><a href="news">News</a></p>
-        <p><a href="politics">Politics</a></p>
-        <p><a href="business">Business</a></p>
-        <p><a href="sports">Sports</a></p>
+        <p routerLink="/''">Home</p>
+        <p routerLink="/News">News</p>
+        <p routerLink="/Politics">Politics</p>
+        <p routerLink="/Business">Business</p>
+        <p routerLink="/Sports">Sports</p>
       </div>
       <div class="footerNavLink">
-        <p><a href="entertainment">Entertainment</a></p>
-        <p><a href="health">Health</a></p>
+        <p routerLink="/Entertainment">Entertainment</p>
+        <p routerLink="/Health">Health</p>
       </div>
       <div class="footerIcon">
-        <img src="./assets/img/icons/youtube.svg" alt="youtubeIcon">
-        <img src="./assets/img/icons/facebook.svg" alt="facebookIcon">
-        <img src="./assets/img/icons/twitter.svg" alt="twitterIcon">
-        <img src="./assets/img/icons/instagram.svg" alt="instagramIcon">
+        <img src="./assets/img/icons/youtube.svg" alt="youtubeIcon" class="socialIcon">
+        <img src="./assets/img/icons/facebook.svg" alt="facebookIcon" class="socialIcon">
+        <img src="./assets/img/icons/twitter.svg" alt="twitterIcon" class="socialIcon">
+        <img src="./assets/img/icons/instagram.svg" alt="instagramIcon" class="socialIcon">
       </div>
       
         <form action="" class="footerForm">
@@ -88,7 +90,7 @@
         </form>
     </div>
     <div class="footerLogo">
-      <a href="#" class="logoSide">
+      <a routerLink="/''"class="logoSide">
         <img src="./assets/img/logo.svg" alt="" class="logoImage">
         <p class="blogName">24/7 NEWS</p>
       </a> 
@@ -98,7 +100,8 @@
     <div class="footerLine"></div>
     
     <p class="footerCopyRight">&#169;2020 Guardian NewsPaper. All RIghts Reserved</p>
-</footer>
+
+  </footer>
 
    
   
