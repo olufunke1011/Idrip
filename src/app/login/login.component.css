@@ -1,7 +1,7 @@
 body {
     background-color: grey;
 }
-.form {
+/* .form {
    display: flex;
    flex-direction: column;
    background-color:#FFFFFF;
@@ -9,5 +9,5 @@ body {
    border-radius: 2.2rem;
   margin: 0 auto;
    width: 40.5rem;
-   /* height: 80%; */
-}
+   height: 80%;
+} */
