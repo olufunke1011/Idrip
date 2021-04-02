@@ -32,18 +32,19 @@
           <li class="nav-item">
             <a class="nav-link navComp mb-2" [routerLink]="'/Entertainment'" (click)="isMenuCollapsed = true">Entertainment</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> 
             <a class="nav-link navComp mb-2" [routerLink]="'/Health'" (click)="isMenuCollapsed = true">Health</a>
           </li>
-          <li ngbDropdown class="nav-item d-inline-block">
-            <a class="nav-link border d-inline-block navComp mb-2"  id="dropdownBasic1" [routerLink]="'.'" (click)="isMenuCollapsed = true" ngbDropdownToggle>Account</a>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <li ngbDropdown class="nav-item">
+            <a class="nav-link border d-inline-block navComp mb-2 pl-1 pr-1"  id="dropdownBasic1" (click)="isMenuCollapsed = true" ngbDropdownToggle>Account</a>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" (click)="isMenuCollapsed = true">
                 <button ngbDropdownItem [routerLink]="'/Login'">Login</button>
                 <button ngbDropdownItem [routerLink]="'/News'">Logout</button>
               </div>
           </li>
           <li class="nav-item ">
-            <a class="nav-link border navComp d-inline-block" [routerLink]="'.'" (click)="isMenuCollapsed = true">Sign Up</a>
+            <a class="nav-link border navComp d-inline-block pl-1 pr-1" id="dropdownBasic1"  [routerLink]="'/SignUp'" (click)="isMenuCollapsed = true">Sign Up</a>
+      
           </li>
         </ul>
       </div>

@@ -14,6 +14,7 @@ import { SportsComponent } from './sports/sports.component';
 import { BusinessComponent } from './business/business.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     EntertainmentComponent,
     SportsComponent,
     BusinessComponent,
-    LoginComponent
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { SportsComponent } from './sports/sports.component';
 import { PoliticsComponent } from './politics/politics.component';
 import { HealthComponent } from './health/health.component';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'Politics', component: PoliticsComponent },
   { path: 'Health', component: HealthComponent },
   { path: 'Login', component: LoginComponent },
+  { path: 'SignUp', component: SignUpComponent },
   
 
   // otherwise redirect to home
